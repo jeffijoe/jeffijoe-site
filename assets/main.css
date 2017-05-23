@@ -1,0 +1,131 @@
+@import url('https://cdn.rawgit.com/filipelinhares/ress/master/dist/ress.min.css');
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 
+    "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", 
+    "Fira Sans", "Droid Sans", "Helvetica Neue", 
+    sans-serif;
+  background-color: #f7f8f9;
+  color: #232427;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 200;
+}
+
+header {
+  padding-top: 10%;
+}
+
+.avatarContainer {
+  text-align: center;
+}
+
+.avatar {
+  border-radius: 50%;
+  max-width: 200px;
+  height: auto;
+  box-shadow: 0 15px 80px rgba(0,0,0,0.24);
+}
+
+.info {
+  padding-top: 50px;
+  text-align: center;
+}
+
+.info h1 {
+  padding-bottom: 10px;
+  font-size: 40px;
+}
+
+.info h3 {
+  font-weight: 300;
+  color: #767980;
+}
+
+.alias {
+  color: #828488!important;
+}
+
+.shapes {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  z-index: -1;
+  top: 0;
+  left: 0;
+}
+
+.shape {
+  width: 5000px;
+  height: 800px;
+  position: absolute;
+  top: 10%;
+  left: 0;
+  background-color: #0084FF;
+  transform: translate(-50%,-80%) rotate(4deg);
+  transform-origin: 50% 0% 50%;
+}
+
+.separator {
+  padding: 40px 0;
+  text-align: center;
+  user-select: none;
+}
+
+.dot {
+  width: 10px;
+  height: 10px;
+  border: 2px solid #b3b8bf;
+  border-radius: 50%;
+  display: inline-block;
+  margin: 0 4px;
+}
+
+section {
+  text-align: center;
+}
+
+section h4 {
+  font-size: 30px;
+}
+
+.buttons {
+  padding-top: 40px;
+}
+
+.buttons .button {
+  text-decoration: none;
+  border: 1px solid #eaebec;
+  background-color: #fff;
+  box-shadow: 0 6px 40px rgba(20, 30, 50, 0.1);
+  color: #202224;
+  padding: 20px;
+  display: inline-block;
+  font-size: 20px;
+  border-radius: 3px;
+  margin: 12px;
+  min-width: 150px;
+}
+
+.buttons .button .primary {
+  font-weight: 400;
+}
+
+.buttons .button .secondary {
+  font-weight: 300;
+  color: #828384;
+}
+
+@media screen and (max-width: 900px) {
+  .shape {
+    transform: translate(-50%,-90%) rotate(4deg);
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .button {
+    display: block
+  }
+}
