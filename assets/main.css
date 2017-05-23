@@ -125,7 +125,7 @@ section h4 {
 }
 
 @media screen and (max-width: 600px) {
-  .button {
+  .buttons .button {
     display: block
   }
 }
